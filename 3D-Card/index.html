@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2 class="name">Headphone</h2>
+            <a href="#" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/headphone.png" alt="" class="product">
+        </div>
+        <div class="box">
+            <h2 class="name">Apple Watch</h2>
+            <a href="#" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/watch.png" alt="" class="product">
+        </div>
+        <div class="box">
+            <h2 class="name">Nike Shoe</h2>
+            <a href="#" class="buy">Buy Now</a>
+            <div class="circle"></div>
+            <img src="./images/shoe.png" alt="" class="product">
+        </div>
+    </div>
+
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+</html>
