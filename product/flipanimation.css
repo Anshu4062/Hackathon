@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .center-dot {
+    
+} */
+
+.container {
+    position: absolute;
+    display: flex;
+    /* padding-left: 70px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+    transform-style: preserve-3d;
+}
+
+.container .box {
+    position: absolute;
+    margin-top: 0;
+    width: 250px;
+    height: 320px;
+    margin: 40px;
+    margin-bottom: 0;
+    background: #232323;
+    transform-style: preserve-3d;
+    border-radius: 8%;
+}
+
+.box2 {
+    left: 300px;
+}
+
+.box3 {
+    left: 600px;
+}
+
+.box4 {
+    left: 900px;
+}
+
+.box4 {
+    left: 900px;
+}
+
+.box5 {
+    left: 1200px;
+}
+
+.box6 {
+    top: 380px;
+}
+
+.box7 {
+    left: 300px;
+    top: 380px;
+}
+
+.box8 {
+    left: 600px;
+    top: 380px;
+}
+
+.container .box::before {
+    /* content: "BOAT"; */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 5em;
+    font-style: italic;
+    font-weight: 900;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .box::after {
+    /* content: "BEST"; */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-style: italic;
+    font-weight: 900;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .box:hover::before,
+.container .box:hover::after {
+    opacity: 0.15;
+}
+
+.container .box .name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .name {
+    top: 40px;
+    opacity: 1;
+
+}
+
+.container .box .buy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, 0, 75px);
+    color: #fff;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .buy {
+    opacity: 1;
+}
+
+.container .box .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: #fff;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.container .box:hover .circle {
+    transform: translate3d(-50%, -50%, 40px);
+}
+
+.container .box .product {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 150px;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.container .box:hover .product {
+    transform: translate3d(-50%, -50%, 100px);
+}
+
+.container .box:nth-child(1) .product,
+.container .box:nth-child(2) .product,
+.container .box:nth-child(3) .product,
+.container .box:nth-child(4) .product,
+.container .box:nth-child(5) .product,
+.container .box:nth-child(6) .product,
+.container .box:nth-child(7) .product,
+.container .box:nth-child(8) .product {
+    max-width: 200px;
+}
+
+/* .container .box:nth-child(1) .circle,
+  .container .box:nth-child(1) .buy {
+    background: cyan;
+  } */
+
+/* .container .box:nth-child(2) .circle,
+  .container .box:nth-child(2) .buy {
+    background: rgb(55, 134, 55);
+  } */
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(3) .circle,
+.container .box:nth-child(4) .circle,
+.container .box:nth-child(5) .circle,
+.container .box:nth-child(6) .circle,
+.container .box:nth-child(7) .circle,
+.container .box:nth-child(8) .circle {
+    background: #CAF4FF;
+}
